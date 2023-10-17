@@ -1,6 +1,6 @@
 {
-  "name": "@capacitor/splash-screen",
-  "version": "5.0.6",
+  "name": "capacitor-splash-screen",
+  "version": "5.0.6.1",
   "description": "The Splash Screen API provides methods for showing or hiding a Splash image.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/capacitor-plugins.git"
+    "url": "git+https://github.com/korenskoy/capacitor-splash-screen.git"
   },
   "bugs": {
     "url": "https://github.com/ionic-team/capacitor-plugins/issues"
@@ -76,8 +76,5 @@
     "android": {
       "src": "android"
     }
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
