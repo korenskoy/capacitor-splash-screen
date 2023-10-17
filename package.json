@@ -42,7 +42,8 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "publish:cocoapod": "pod trunk push ./CapacitorSplashScreen.podspec --allow-warnings"
+    "publish:cocoapod": "pod trunk push ./CapacitorSplashScreen.podspec --allow-warnings",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "@capacitor/android": "^5.0.0",
