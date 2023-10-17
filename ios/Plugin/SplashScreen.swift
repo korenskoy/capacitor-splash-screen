@@ -148,9 +148,11 @@ import Capacitor
         DispatchQueue.main.async {
             UIView.transition(with: self.viewController.view, duration: TimeInterval(Double(fadeOutDuration) / 1000), options: .curveLinear, animations: {
                 self.viewController.view.alpha = 0
+                self.viewController.view.transform = CGAffineTransform.identity.scaledBy(x: 7, y: 7);
 
                 if self.config.showSpinner {
                     self.spinner.alpha = 0
+                    self.spinner.transform = CGAffineTransform.identity.scaledBy(x: 7, y: 7);
                 }
             }) { (_: Bool) in
                 self.tearDown()
